@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jale Summak — AI/ML Engineer & Data Scientist</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0E1526;
+    --navy-2:#161F36;
+    --line:#28324B;
+    --cream:#F3EFE6;
+    --cream-dim:rgba(243,239,230,0.62);
+    --gold:#C9A24B;
+    --gold-soft:rgba(201,162,75,0.14);
+    --font-display:'Fraunces',Georgia,serif;
+    --font-body:'Inter',system-ui,sans-serif;
+    --font-mono:'JetBrains Mono',monospace;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--navy);
+    color:var(--cream);
+    font-family:var(--font-body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:760px;margin:0 auto;padding:0 28px}
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:sticky;top:0;z-index:10;
+    background:rgba(14,21,38,0.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+  .nav-name{font-family:var(--font-mono);font-size:13px;letter-spacing:.5px;color:var(--gold)}
+  .nav-links{display:flex;gap:22px}
+  .nav-links a{font-size:13px;color:var(--cream-dim);transition:color .2s}
+  .nav-links a:hover{color:var(--cream)}
+
+  /* ---------- HERO ---------- */
+  header.hero{padding:96px 0 72px;border-bottom:1px solid var(--line)}
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:12px;letter-spacing:1.5px;text-transform:uppercase;
+    color:var(--gold);margin-bottom:22px;display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:24px;height:1px;background:var(--gold)}
+  h1{
+    font-family:var(--font-display);
+    font-weight:500;
+    font-size:clamp(38px,6vw,58px);
+    line-height:1.08;
+    letter-spacing:-0.5px;
+    margin-bottom:18px;
+  }
+  h1 em{font-style:italic;color:var(--gold);font-weight:400}
+  .role{font-size:17px;color:var(--cream-dim);max-width:520px;margin-bottom:32px}
+  .hero-photo{
+    width:96px;height:96px;border-radius:50%;
+    background:linear-gradient(145deg,var(--gold-soft),transparent);
+    border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;
+    font-family:var(--font-mono);font-size:12px;color:var(--cream-dim);
+    margin-bottom:28px;
+    overflow:hidden;
+  }
+  .hero-photo img{width:100%;height:100%;object-fit:cover;display:none}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{
+    font-family:var(--font-mono);font-size:13px;
+    padding:11px 20px;border-radius:3px;
+    border:1px solid var(--line);
+    transition:all .2s;
+  }
+  .btn-primary{background:var(--gold);color:var(--navy);border-color:var(--gold);font-weight:500}
+  .btn-primary:hover{opacity:.88}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+
+  /* ---------- SECTION SHARED ---------- */
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  .sec-label{
+    font-family:var(--font-mono);font-size:12px;letter-spacing:1.5px;
+    text-transform:uppercase;color:var(--gold);margin-bottom:24px;
+  }
+  p.lede{font-size:16px;color:var(--cream-dim);max-width:600px}
+
+  /* ---------- STATS ---------- */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:36px}
+  .stat-num{font-family:var(--font-mono);font-size:26px;color:var(--gold);margin-bottom:4px}
+  .stat-label{font-size:12px;color:var(--cream-dim)}
+  @media(max-width:600px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+  /* ---------- PROJECTS ---------- */
+  .project{
+    padding:22px 0;border-top:1px solid var(--line);
+    display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start;
+  }
+  .project:first-of-type{border-top:none}
+  .project-title{font-family:var(--font-display);font-size:19px;margin-bottom:6px}
+  .project-desc{font-size:14px;color:var(--cream-dim);max-width:480px}
+  .project-tag{font-family:var(--font-mono);font-size:11px;color:var(--gold);white-space:nowrap;padding-top:4px}
+
+  /* ---------- LINKS / FOOTER ---------- */
+  .links{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+  .links a{
+    font-family:var(--font-mono);font-size:13px;
+    padding:9px 16px;border:1px solid var(--line);border-radius:3px;
+    transition:all .2s;
+  }
+  .links a:hover{border-color:var(--gold);color:var(--gold)}
+  footer{padding:40px 0;text-align:center}
+  footer p{font-family:var(--font-mono);font-size:12px;color:var(--cream-dim)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="nav-name">JALE SUMMAK</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-photo">
+      <!-- Kendi fotoğrafını eklemek için: img src="fotograf.jpg" yaz ve style="display:block" yap -->
+      photo
+    </div>
+    <div class="eyebrow">AI/ML Engineer &amp; Data Scientist</div>
+    <h1>I ship models that<br><em>measurably fix</em> things.</h1>
+    <p class="role">14 years in engineering, the last few rebuilt around AI — computer vision, NLP, and LLM/RAG systems for healthcare and manufacturing. Ankara, Türkiye.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="cv.pdf">Download CV</a>
+      <a class="btn btn-ghost" href="#work">See the work</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-label">About</div>
+    <p class="lede">
+      Started as a Chemical Engineer in GMP-regulated quality systems, then rebuilt a technical career around AI.
+      Within one intensive bootcamp, delivered 70+ ML/AI projects across 18 domains, graduated #1 out of the
+      cohort, and earned 3 Kaggle Bronze Medals. That same drive now shows up in production: a computer-vision
+      defect detector that cut customer complaints 74% and lifted efficiency 7.5%, an NLP+DOE programme that cut
+      complaints 82%, and €82K in annual savings from experiment-driven optimisation.
+    </p>
+    <div class="stats">
+      <div>
+        <div class="stat-num">70+</div>
+        <div class="stat-label">AI/ML projects</div>
+      </div>
+      <div>
+        <div class="stat-num">14</div>
+        <div class="stat-label">years engineering</div>
+      </div>
+      <div>
+        <div class="stat-num">3</div>
+        <div class="stat-label">Kaggle medals</div>
+      </div>
+      <div>
+        <div class="stat-num">#1</div>
+        <div class="stat-label">bootcamp rank</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-label">Selected Work</div>
+
+    <div class="project">
+      <div>
+        <div class="project-title">Plasterboard Edge Defect Detection</div>
+        <div class="project-desc">CNN + LLM/RAG operator-alert system trained on 2,500 production images; deployed on the live line.</div>
+      </div>
+      <div class="project-tag">−74% complaints</div>
+    </div>
+
+    <div class="project">
+      <div>
+        <div class="project-title">Customer Feedback Intelligence</div>
+        <div class="project-desc">NLP topic modelling over 15 years of records, feeding a DOE-based recipe optimisation programme.</div>
+      </div>
+      <div class="project-tag">−82% complaints</div>
+    </div>
+
+    <div class="project">
+      <div>
+        <div class="project-title">Scoliosis Cobb Angle Estimation</div>
+        <div class="project-desc">DenseNet121 regression on 15,999 spinal images, deployed on Hugging Face Spaces.</div>
+      </div>
+      <div class="project-tag">MAE 5.18→3.42</div>
+    </div>
+
+    <div class="project">
+      <div>
+        <div class="project-title">Instructor Digital Twin</div>
+        <div class="project-desc">RAG assistant grounded in course recordings, code, and slides — architecture published as a technical article.</div>
+      </div>
+      <div class="project-tag">RAG</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-label">Contact</div>
+    <p class="lede">Ankara, Türkiye · jalesummak@gmail.com</p>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/jalesummak/">LinkedIn</a>
+      <a href="https://github.com/jalesummak">GitHub</a>
+      <a href="https://huggingface.co/jalesummak">Hugging Face</a>
+      <a href="https://www.kaggle.com/jalesummak">Kaggle</a>
+      <a href="https://medium.com/@jalesummak">Medium</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Jale Summak</p>
+</footer>
+
+</body>
+</html>
