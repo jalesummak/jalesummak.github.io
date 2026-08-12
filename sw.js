@@ -1,5 +1,5 @@
-const CACHE = "jale-ai-studio-v1";
-const CORE = ["/", "/manifest.webmanifest", "/favicon.svg"];
+const CACHE = "tbc-tech-ai-v2";
+const CORE = ["/", "/manifest.webmanifest", "/favicon.svg", "/og-tbc-tech-ai.png"];
 self.addEventListener("install", (event) => event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(CORE))));
 self.addEventListener("activate", (event) => event.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key))))));
 self.addEventListener("fetch", (event) => {

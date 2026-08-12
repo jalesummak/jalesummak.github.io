@@ -1,33 +1,26 @@
-# Jale Summak — AI Product Portfolio
+# TBC Tech AI · Jale Summak Product Studio
 
-A bilingual, mobile-first portfolio that connects **52 data science and AI projects** with their GitHub source, Kaggle research, Hugging Face demos and seven product experiences.
+Jale Summak'ın 52 veri bilimi ve yapay zekâ projesini sekiz kurulabilir mobil ürün ailesi altında birleştiren, İngilizce/Türkçe TBC Tech AI ürün ve portföy sitesi.
 
-## Product families
+## Ürün aileleri
 
-- **EyeGuide AI** — health and accessibility
-- **AgroLens AI** — agriculture and nature
-- **CityPulse AI** — cities and environment
-- **TrustLens AI** — trust, safety and language
-- **RecoMuse AI** — personalized discovery
-- **BizPilot AI** — business and forecasting
-- **CareerPath AI** — career and education
-- **Jale AI Playground** — experimental models
+- EyeGuide AI — health and accessibility
+- AgroLens AI — agriculture and nature
+- CityPulse AI — cities and environment
+- TrustLens AI — trust, safety and language
+- RecoMuse AI — personalized discovery
+- BizPilot AI — business and forecasting
+- CareerPath AI — career and education
+- VisionForge AI — CNN and visual intelligence
 
-## Live portfolio
+Her proje kartı GitHub, Kaggle notebook, Hugging Face model kaynağı ve site içinde çalışan ilgili mobil ürünü birbirinden açık biçimde ayırır. Algorithmic Trading çalışması gizli tutulur.
 
-**[jalesummak.github.io](https://jalesummak.github.io/)**
+## Local validation
 
-The algorithmic-trading research remains private and is intentionally not linked as public source. The existing CV is preserved at [`cv.pdf`](./cv.pdf).
-jalesummak.github.io
+```bash
+npm run build
+npm test
+npm run dev
+```
 
-Kişisel web sitem — AI/ML Engineer & Data Scientist.
-
-🔗 Canlı site: jalesummak.github.io
-
-İçerik
-Kısa tanıtım ve öne çıkan projeler
-CV
-İletişim ve profil linkleri (LinkedIn, GitHub, Hugging Face, Kaggle, Medium)
-Kullanılan teknoloji
-
-Tek dosyalık statik HTML/CSS — herhangi bir framework veya build adımı gerekmez, GitHub Pages üzerinden doğrudan yayınlanır.
+Site, bağımlılıksız Cloudflare Workers uyumlu bir çıktı üretir. Yayın paketi `dist/` klasöründedir.
