@@ -190,6 +190,68 @@ button, a { touch-action: manipulation; }
 .orbit-a { width: 660px; height: 420px; transform: rotate(17deg); }
 .orbit-b { width: 420px; height: 670px; transform: rotate(-22deg); }
 
+.tbc-vision-section {
+  padding: 118px 0 126px;
+  background: var(--deep);
+  color: white;
+}
+.tbc-vision-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 460px);
+  align-items: end;
+  gap: 60px;
+  margin-bottom: 54px;
+}
+.tbc-vision-heading .section-kicker { color: var(--lime); }
+.tbc-vision-heading h2 {
+  margin: 0;
+  font-size: clamp(48px, 5.8vw, 78px);
+  line-height: .94;
+  letter-spacing: -.055em;
+}
+.tbc-vision-heading h2 em { color: var(--lime); font-style: normal; }
+.tbc-vision-heading > p {
+  margin: 0;
+  color: #a5adbb;
+  font-size: 17px;
+  line-height: 1.68;
+}
+.tbc-vision-frame {
+  margin: 0;
+  border: 1px solid rgba(215, 255, 100, .24);
+  border-radius: 32px;
+  background: #020304;
+  overflow: hidden;
+  box-shadow: 0 38px 110px rgba(0, 0, 0, .44);
+}
+.tbc-vision-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.tbc-vision-frame figcaption {
+  min-height: 70px;
+  padding: 0 28px;
+  border-top: 1px solid rgba(255, 255, 255, .12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.tbc-vision-frame figcaption strong {
+  color: var(--lime);
+  font-size: 12px;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.tbc-vision-frame figcaption span {
+  color: #8f98a8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
 .section-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 440px); align-items: end; gap: 56px; margin-bottom: 54px; }
 .section-heading h2, .about-grid h2 {
   max-width: 800px;
@@ -521,6 +583,13 @@ button, a { touch-action: manipulation; }
   .board-core strong { font-size: 31px; }
   .board-grid div { min-height: 105px; }
   .board-orbit { display: none; }
+  .tbc-vision-section { padding: 82px 0 88px; }
+  .tbc-vision-heading { grid-template-columns: 1fr; gap: 24px; margin-bottom: 36px; }
+  .tbc-vision-heading h2 { font-size: 47px; }
+  .tbc-vision-heading > p { font-size: 16px; }
+  .tbc-vision-frame { border-radius: 22px; }
+  .tbc-vision-frame figcaption { min-height: 76px; padding: 16px 18px; align-items: flex-start; flex-direction: column; justify-content: center; gap: 7px; }
+  .tbc-vision-frame figcaption span { font-size: 10px; }
   .section-heading { grid-template-columns: 1fr; gap: 24px; margin-bottom: 38px; }
   .section-heading h2, .about-grid h2 { font-size: 43px; }
   .section-heading > p { font-size: 16px; }
@@ -583,9 +652,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   outline-offset: 3px;
 }
 </style></head><body><main>
-    <header class="site-header"><a class="brand personal-brand" href="#top" aria-label="Jale Summak home"><span>JS</span><strong>Jale Summak<small>AI Systems & Product Builder · Founder, TBC Tech AI</small></strong></a><nav aria-label="Primary navigation"><a href="#work">Selected work</a><a href="#capabilities">Capabilities</a><a href="#products"><span data-i18n="products">Impact domains</span></a><a href="#projects"><span data-i18n="atlas">Project atlas</span></a><a href="#about"><span data-i18n="about">About</span></a></nav><div class="header-actions"><a class="lang-toggle" href="/cv.pdf" target="_blank" rel="noreferrer">CV</a><button class="lang-toggle" type="button" data-lang>TR</button><a class="mini-cta" href="mailto:jalesummak@gmail.com">Contact</a></div></header>
+    <header class="site-header"><a class="brand personal-brand" href="#top" aria-label="Jale Summak home"><span>JS</span><strong>Jale Summak<small>AI Systems & Product Builder · Founder, TBC Tech AI</small></strong></a><nav aria-label="Primary navigation"><a href="#vision">TBC vision</a><a href="#work">Selected work</a><a href="#capabilities">Capabilities</a><a href="#products"><span data-i18n="products">Impact domains</span></a><a href="#projects"><span data-i18n="atlas">Project atlas</span></a><a href="#about"><span data-i18n="about">About</span></a></nav><div class="header-actions"><a class="lang-toggle" href="/cv.pdf" target="_blank" rel="noreferrer">CV</a><button class="lang-toggle" type="button" data-lang>TR</button><a class="mini-cta" href="mailto:jalesummak@gmail.com">Contact</a></div></header>
     <section id="top" class="hero section-shell"><div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span><span data-i18n="eyebrow">JALE SUMMAK · AI SYSTEMS & PRODUCT BUILDER</span></p><h1 data-i18n="headline">I build AI systems that turn data<br><em>into confident decisions.</em></h1><p class="hero-intro"><span data-i18n="intro">From source-grounded AI agents and computer vision to forecasting, recommender systems and distributed data foundations — this is an evidence-led portfolio built to be inspected, understood and used.</span></p><div class="hero-actions"><a class="primary-button" href="#work"><span data-i18n="explore">See selected systems</span><span>↘</span></a><a class="text-button" href="https://github.com/jalesummak" target="_blank" rel="noreferrer"><span data-i18n="source">Inspect GitHub</span><span>↗</span></a></div><div class="metrics" aria-label="Portfolio metrics"><div><strong>54</strong><span>evidence-backed projects</span></div><div><strong>23</strong><span>AI application hubs</span></div><div><strong>49</strong><span>public Kaggle notebooks</span></div><div><strong>8</strong><span>product directions</span></div></div></div>
     <div class="hero-visual" aria-label="Jale Summak AI system map"><div class="hero-board"><div class="board-top"><span>TBC TECH AI · APPLIED SYSTEMS</span><i>PORTFOLIO / 2026</i></div><div class="board-core"><small>END-TO-END AI PRODUCT LOOP</small><strong>DATA <i>→</i> MODEL <i>→</i> DECISION <i>→</i> EXPERIENCE</strong><p>Research depth meets product clarity.</p></div><div class="board-grid"><div><span>01</span><b>AI Agents</b><small>RAG · LLM · multi-agent</small></div><div><span>02</span><b>Vision</b><small>CNN · transfer learning</small></div><div><span>03</span><b>Forecasting</b><small>time series · regression</small></div><div><span>04</span><b>Data at scale</b><small>PySpark · GIS · AutoML</small></div></div><div class="board-foot"><span><i></i>54 systems mapped</span><strong>Built by Jale Summak</strong></div></div><div class="board-orbit orbit-a"></div><div class="board-orbit orbit-b"></div></div></section>
+    <section id="vision" class="tbc-vision-section" aria-labelledby="tbc-vision-title"><div class="section-shell"><div class="tbc-vision-heading"><div><p class="section-kicker">TBC TECH AI · PRODUCT VISION</p><h2 id="tbc-vision-title">AI products,<br><em>not just models.</em></h2></div><p>One connected product ecosystem across computer vision, health, agriculture, cities, language, recommendations, forecasting, trust and career intelligence.</p></div><figure class="tbc-vision-frame"><img src="/og-tbc-tech-ai.png" alt="TBC Tech AI product ecosystem connecting AI application areas including computer vision, health, agriculture, cities, language, recommendations, forecasting, trust and career" width="1672" height="941"><figcaption><strong>TBC Tech AI</strong><span>Research → systems → useful experiences</span></figcaption></figure></div></section>
     <section id="work" class="flagship-section"><div class="section-shell"><div class="section-heading"><div><p class="section-kicker">01 / SELECTED SYSTEMS</p><h2>Work that shows<br><em>how I think.</em></h2></div><p>Four projects that connect technical depth to a clear human or business decision. The source is open for inspection.</p></div><div class="flagship-grid"><article class="flagship-card flagship-primary" style="--accent:#c8ff5b"><div class="flagship-top"><span>01</span><b>SOURCE-GROUNDED AI AGENT</b></div><div><h3>Zafer Hoca AI Assistant</h3><p>RAG over course materials and uploaded project files</p></div><div class="flagship-proof"><span>RAG · ChromaDB · multilingual-e5 embeddings · Claude-compatible LLM · Streamlit</span><strong>8 supported file formats</strong></div><a href="https://github.com/jalesummak/zafer-hoca-asistan" target="_blank" rel="noreferrer" aria-label="Inspect Zafer Hoca AI Assistant on GitHub">Inspect the system <span>↗</span></a></article><article class="flagship-card " style="--accent:#8bd6ff"><div class="flagship-top"><span>02</span><b>TALENT INTELLIGENCE</b></div><div><h3>AI Recruitment Agent</h3><p>Resume retrieval, evidence comparison and ranked recommendations</p></div><div class="flagship-proof"><span>ChromaDB vector retrieval · OpenRouter LLM · DOCX parsing · Gradio</span><strong>END-TO-END</strong></div><a href="https://github.com/jalesummak/ai-recruitment-agent" target="_blank" rel="noreferrer" aria-label="Inspect AI Recruitment Agent on GitHub">Inspect the system <span>↗</span></a></article><article class="flagship-card " style="--accent:#c6a7ff"><div class="flagship-top"><span>03</span><b>ACCESSIBLE MULTI-AGENT AI</b></div><div><h3>EyeFriendly Multi-Agent</h3><p>Multilingual visual context shaped into accessible guidance</p></div><div class="flagship-proof"><span>Multi-agent orchestration · computer vision · generative AI</span><strong>END-TO-END</strong></div><a href="https://github.com/jalesummak/eyefriendly-multi-agent" target="_blank" rel="noreferrer" aria-label="Inspect EyeFriendly Multi-Agent on GitHub">Inspect the system <span>↗</span></a></article><article class="flagship-card " style="--accent:#ffb86b"><div class="flagship-top"><span>04</span><b>FORECASTING SYSTEM</b></div><div><h3>Seasonal Forecasting</h3><p>Seasonality, rolling validation and future planning signals</p></div><div class="flagship-proof"><span>SARIMAX · decomposition · rolling validation</span><strong>MAPE 6.43% · &gt;93% accuracy</strong></div><a href="https://github.com/jalesummak/time-series-forecast" target="_blank" rel="noreferrer" aria-label="Inspect Seasonal Forecasting on GitHub">Inspect the system <span>↗</span></a></article></div></div></section>
     <section id="capabilities" class="section-shell toolkit-section"><div class="section-heading"><div><p class="section-kicker">02 / ENGINEERING TOOLKIT</p><h2>Beyond model training:<br><em>systems thinking.</em></h2></div><p>Spark, RAG, MLOps, GIS and AutoML are visible as practical foundations — separated from project claims so the portfolio stays precise.</p></div><div class="toolkit-grid"><article><span>01</span><div><small>DISTRIBUTED DATA</small><h3>Apache Spark / PySpark</h3><p>Hands-on labs with RDD transforms, Spark SQL, MLlib classification, aggregation and graph co-occurrence.</p></div></article><article><span>02</span><div><small>INTELLIGENT SYSTEMS</small><h3>LLM, RAG & AI Agents</h3><p>ChromaDB retrieval, multilingual embeddings, bounded memory, source grounding and role-based agent flows.</p></div></article><article><span>03</span><div><small>BUILD & DELIVER</small><h3>Model Engineering</h3><p>TensorFlow, Keras, scikit-learn, XGBoost, LightGBM, evaluation, model artifacts and inference packaging.</p></div></article><article><span>04</span><div><small>DECISION INTELLIGENCE</small><h3>Data, GIS & AutoML</h3><p>Pandas, Plotly, geospatial signals, satellite imagery, exploratory analysis and automated model comparison.</p></div></article></div></section>
     <section id="products" class="section-shell product-section"><div class="section-heading"><div><p class="section-kicker">03 / IMPACT DOMAINS</p><h2><span data-i18n="familyTitle">Eight impact domains. One product mindset.</span></h2></div><p><span data-i18n="familyLead">Jale Summak’s 54 projects are organized by the user or business decision they support. TBC Tech AI is the company and product-studio layer that turns this research into usable experiences.</span></p></div><div class="category-grid"><article class="category-card" style="--accent:#77f2c8"><div class="card-index">01</div><div class="category-icon" aria-hidden="true">◉</div><p>Health &amp; Accessibility</p><h3>EyeGuide AI</h3><span class="category-description">Accessible vision assistance and responsible medical-imaging research tools.</span><div class="category-footer"><span>4 projects</span><a href="/apps/health" aria-label="Open EyeGuide AI">↗</a></div></article><article class="category-card" style="--accent:#b7f171"><div class="card-index">02</div><div class="category-icon" aria-hidden="true">✦</div><p>Agriculture &amp; Nature</p><h3>AgroLens AI</h3><span class="category-description">Camera-first classification for crops, fruit, plant health and biodiversity.</span><div class="category-footer"><span>4 projects</span><a href="/apps/agro" aria-label="Open AgroLens AI">↗</a></div></article><article class="category-card" style="--accent:#69d2ff"><div class="card-index">03</div><div class="category-icon" aria-hidden="true">⌁</div><p>Cities &amp; Environment</p><h3>CityPulse AI</h3><span class="category-description">Urban risk, air quality, satellite imagery and mobility intelligence.</span><div class="category-footer"><span>6 projects</span><a href="/apps/city" aria-label="Open CityPulse AI">↗</a></div></article><article class="category-card" style="--accent:#c6a7ff"><div class="card-index">04</div><div class="category-icon" aria-hidden="true">◇</div><p>Trust, Safety &amp; Language</p><h3>TrustLens AI</h3><span class="category-description">Text intelligence for safer passwords, cleaner communities and informed reading.</span><div class="category-footer"><span>8 projects</span><a href="/apps/trust" aria-label="Open TrustLens AI">↗</a></div></article><article class="category-card" style="--accent:#ff9bc8"><div class="card-index">05</div><div class="category-icon" aria-hidden="true">✺</div><p>Personalized Discovery</p><h3>RecoMuse AI</h3><span class="category-description">Taste-aware recommendations across movies, fashion and music.</span><div class="category-footer"><span>4 projects</span><a href="/apps/discovery" aria-label="Open RecoMuse AI">↗</a></div></article><article class="category-card" style="--accent:#ffd36a"><div class="card-index">06</div><div class="category-icon" aria-hidden="true">↗</div><p>Business &amp; Forecasting</p><h3>BizPilot AI</h3><span class="category-description">Forecasting, segmentation, pricing and risk tools for practical decisions.</span><div class="category-footer"><span>17 projects</span><a href="/apps/business" aria-label="Open BizPilot AI">↗</a></div></article><article class="category-card" style="--accent:#ff8d72"><div class="card-index">07</div><div class="category-icon" aria-hidden="true">◎</div><p>Career &amp; Education</p><h3>CareerPath AI</h3><span class="category-description">Job-market signals and learning-outcome scenarios for clearer next steps.</span><div class="category-footer"><span>4 projects</span><a href="/apps/career" aria-label="Open CareerPath AI">↗</a></div></article><article class="category-card" style="--accent:#9db6ff"><div class="card-index">08</div><div class="category-icon" aria-hidden="true">◫</div><p>CNN &amp; Visual Intelligence</p><h3>VisionForge AI</h3><span class="category-description">Computer vision, CNN and foundational classification systems shaped into a focused visual-intelligence studio.</span><div class="category-footer"><span>7 projects</span><a href="/apps/playground" aria-label="Open VisionForge AI">↗</a></div></article></div></section>
