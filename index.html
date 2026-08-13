@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="portfolio-version" content="jale-interactive-product-orbit-v6"><title>Jale Summak — AI Systems &amp; Product Builder · Founder, TBC Tech AI</title><meta name="description" content="Jale Summak’s category-first portfolio: 54 visual AI and data case studies organized across 17 technical collections, with purpose, methods and measurable value."><meta name="theme-color" content="#080b12"><link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/favicon.svg"><meta property="og:type" content="website"><meta property="og:title" content="Jale Summak — AI Systems Constellation"><meta property="og:description" content="Jale Summak’s category-first portfolio: 54 visual AI and data case studies organized across 17 technical collections, with purpose, methods and measurable value."><meta property="og:image" content="https://jalesummak.github.io/og.png"><meta property="og:url" content="https://jalesummak.github.io/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://jalesummak.github.io/og.png"><style>:root {
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="portfolio-version" content="jale-clickable-product-orbit-v7"><title>Jale Summak — AI Systems &amp; Product Builder · Founder, TBC Tech AI</title><meta name="description" content="Jale Summak’s category-first portfolio: 54 visual AI and data case studies organized across 17 technical collections, with purpose, methods and measurable value."><meta name="theme-color" content="#080b12"><link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/favicon.svg"><meta property="og:type" content="website"><meta property="og:title" content="Jale Summak — AI Systems Constellation"><meta property="og:description" content="Jale Summak’s category-first portfolio: 54 visual AI and data case studies organized across 17 technical collections, with purpose, methods and measurable value."><meta property="og:image" content="https://jalesummak.github.io/og.png"><meta property="og:url" content="https://jalesummak.github.io/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://jalesummak.github.io/og.png"><style>:root {
   --ink: #10131b;
   --deep: #0b0e14;
   --paper: #f4f2ec;
@@ -1167,6 +1167,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   text-align: left;
   cursor: pointer;
   transform-style: preserve-3d;
+  transform: translate(-50%, -50%);
+  will-change: transform, opacity;
 }
 .orbit-product:nth-child(2) { left: 72%; top: 20%; }
 .orbit-product:nth-child(3) { left: 81%; top: 44%; }
@@ -1202,18 +1204,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .orbit-product:active .orbit-product-face { transform: rotateX(1deg) rotateY(1deg) translateZ(13px) scale(.98); }
 .orbit-product:focus-visible { outline: 2px solid white; outline-offset: 8px; border-radius: 24px; }
 .orbit-product.is-selected .orbit-product-face::before { content: "SELECTED"; position: absolute; top: -10px; right: 13px; padding: 5px 8px; border-radius: 999px; background: var(--accent); color: #080b12; font-size: 7px; font-weight: 950; letter-spacing: .12em; transform: translateZ(32px); }
-@supports (offset-path: ellipse(40% 34% at 50% 50%)) {
-  .orbit-product {
-    left: 0;
-    top: 0;
-    offset-path: ellipse(41% 34% at 50% 45%);
-    offset-anchor: center;
-    animation: productCategoryOrbit 30s linear infinite;
-    animation-delay: var(--delay);
-  }
-}
-.product-orbit-stage:hover .orbit-product,
-.product-orbit-experience.orbit-paused .orbit-product { animation-play-state: paused; }
+.product-orbit-experience.orbit-paused .orbit-product-face { border-color: color-mix(in srgb, var(--accent) 58%, transparent); }
 .orbit-stage-copy { position: absolute; z-index: 8; left: 34px; bottom: 31px; display: flex; flex-direction: column; pointer-events: none; }
 .orbit-stage-copy > span { color: var(--lime); font-size: 9px; font-weight: 900; letter-spacing: .15em; }
 .orbit-stage-copy > span i { width: 6px; height: 6px; margin-right: 8px; border-radius: 50%; background: var(--lime); display: inline-block; box-shadow: 0 0 14px var(--lime); }
@@ -1248,12 +1239,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .orbit-project-links a:hover { border-color: var(--accent); color: var(--accent); }
 .orbit-project-links .private-pill { background: rgba(255,255,255,.06); color: #8d96a5; }
 .orbit-track-note { margin: 0 12px; color: #707a8b; font-size: 10px; letter-spacing: .04em; }
-@keyframes productCategoryOrbit {
-  0%,100% { offset-distance: 0%; transform: translateZ(-115px) scale(.76); opacity: .48; z-index: 1; }
-  23% { transform: translateZ(-30px) scale(.88); opacity: .76; z-index: 3; }
-  48%,52% { transform: translateZ(125px) scale(1.04); opacity: 1; z-index: 8; }
-  77% { transform: translateZ(-30px) scale(.88); opacity: .76; z-index: 3; }
-}
 @keyframes orbitCoreTurn { from { transform: translate(-50%,-50%) rotateX(-12deg) rotateY(18deg) translateZ(55px); } to { transform: translate(-50%,-50%) rotateX(-4deg) rotateY(42deg) translateZ(75px); } }
 @keyframes orbitRingTurn { to { rotate: 1 0 0 360deg; } }
 @keyframes orbitAmbient { 50% { opacity: .68; transform: translate(-50%,-50%) scale(1.1); } }
@@ -1289,7 +1274,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .orbit-core small { font-size: 6px; }
   .orbit-ring-one { width: 300px; height: 300px; top: 42%; }
   .orbit-ring-two { width: 420px; height: 270px; top: 42%; }
-  @supports (offset-path: ellipse(40% 34% at 50% 50%)) { .orbit-product { offset-path: ellipse(42% 33% at 50% 42%); } }
   .orbit-stage-copy { right: 16px; bottom: 82px; }
   .orbit-stage-copy strong { font-size: 19px; }
   .orbit-stage-copy small { max-width: 280px; }
@@ -1301,9 +1285,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .orbit-project-card { min-width: 245px; width: 245px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .orbit-product, .orbit-core, .orbit-ring, .orbit-ambient { animation: none !important; }
+  .orbit-core, .orbit-ring, .orbit-ambient { animation: none !important; }
   .orbit-motion { display: none; }
-  .orbit-product { opacity: 1; transform: translate(-50%,-50%) scale(.82); }
+  .orbit-product { opacity: 1; }
 }
 </style></head><body><main>
     <header class="site-header"><a class="brand personal-brand" href="#top" aria-label="Jale Summak home"><span>JS</span><strong>Jale Summak<small>AI Systems & Product Builder · Founder, TBC Tech AI</small></strong></a><nav aria-label="Primary navigation"><a href="#vision">TBC vision</a><a href="#work">Selected work</a><a href="#projects">17 collections</a><a href="#products"><span data-i18n="products">Live AI apps</span></a><a href="#about"><span data-i18n="about">About</span></a></nav><div class="header-actions"><a class="lang-toggle" href="/cv.pdf" target="_blank" rel="noreferrer">CV</a><button class="lang-toggle" type="button" data-lang>TR</button><a class="mini-cta" href="mailto:jalesummak@gmail.com">Contact</a></div></header>
@@ -1324,10 +1308,11 @@ const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches
 document.querySelectorAll('[data-tilt]').forEach(card=>{if(reduceMotion)return;const strength=Number(card.dataset.tiltStrength||4);card.addEventListener('pointermove',event=>{if(event.pointerType==='touch')return;const rect=card.getBoundingClientRect(),x=(event.clientX-rect.left)/rect.width-.5,y=(event.clientY-rect.top)/rect.height-.5;card.style.setProperty('--tilt-x',(-y*strength)+'deg');card.style.setProperty('--tilt-y',(x*strength)+'deg')});card.addEventListener('pointerleave',()=>{card.style.setProperty('--tilt-x','0deg');card.style.setProperty('--tilt-y','0deg')})});
 document.querySelector('[data-motion-toggle]')?.addEventListener('click',event=>{const paused=document.body.classList.toggle('motion-paused');event.currentTarget.setAttribute('aria-pressed',String(paused));event.currentTarget.querySelector('span').textContent=paused?'Resume motion':'Pause motion';event.currentTarget.querySelector('i').textContent=paused?'▶':'Ⅱ'});
 const productOrbit=document.querySelector('[data-product-orbit]');
-if(productOrbit){const orbitButtons=[...productOrbit.querySelectorAll('[data-orbit-category]')],orbitPanels=[...productOrbit.querySelectorAll('[data-orbit-panel]')],orbitMotion=productOrbit.querySelector('[data-orbit-motion]');let orbitPaused=false;
+if(productOrbit){const orbitButtons=[...productOrbit.querySelectorAll('[data-orbit-category]')],orbitPanels=[...productOrbit.querySelectorAll('[data-orbit-panel]')],orbitMotion=productOrbit.querySelector('[data-orbit-motion]'),orbitStage=productOrbit.querySelector('.product-orbit-stage');let orbitPaused=false,orbitHover=false,orbitAngle=-Math.PI/2,lastOrbitTime=performance.now();
 const setOrbitMotion=paused=>{orbitPaused=paused;productOrbit.classList.toggle('orbit-paused',paused);orbitMotion?.setAttribute('aria-pressed',String(paused));const label=orbitMotion?.querySelector('span'),icon=orbitMotion?.querySelector('i');if(label)label.textContent=paused?'Resume orbit':'Pause orbit';if(icon)icon.textContent=paused?'▶':'Ⅱ'};
 const openOrbitCategory=button=>{const category=button.dataset.orbitCategory;orbitButtons.forEach(item=>{const selected=item===button;item.classList.toggle('is-selected',selected);item.setAttribute('aria-expanded',String(selected))});orbitPanels.forEach(panel=>{panel.hidden=panel.dataset.orbitPanel!==category});setOrbitMotion(true);if(window.innerWidth<900)productOrbit.querySelector('[data-orbit-panel="'+category+'"]')?.scrollIntoView({behavior:reduceMotion?'auto':'smooth',block:'start'})};
-orbitButtons.forEach((button,index)=>{button.addEventListener('click',()=>openOrbitCategory(button));button.addEventListener('keydown',event=>{if(!['ArrowRight','ArrowLeft'].includes(event.key))return;event.preventDefault();const step=event.key==='ArrowRight'?1:-1;orbitButtons[(index+step+orbitButtons.length)%orbitButtons.length].focus()})});orbitMotion?.addEventListener('click',()=>setOrbitMotion(!orbitPaused));if(reduceMotion)setOrbitMotion(true)}
+const layoutProductOrbit=now=>{const elapsed=Math.min(50,now-lastOrbitTime);lastOrbitTime=now;if(!orbitPaused&&!orbitHover&&!reduceMotion)orbitAngle+=elapsed*.00018;const width=orbitStage?.clientWidth||1000,height=orbitStage?.clientHeight||700,rx=Math.min(width*.34,390),ry=Math.min(height*.255,184);orbitButtons.forEach((button,index)=>{const angle=orbitAngle+index*Math.PI*2/orbitButtons.length,x=Math.cos(angle)*rx,y=Math.sin(angle)*ry,depth=(Math.sin(angle)+1)/2,scale=.78+depth*.24;button.style.left='50%';button.style.top='44%';button.style.transform='translate(-50%,-50%) translate('+x.toFixed(1)+'px,'+y.toFixed(1)+'px) scale('+scale.toFixed(3)+')';button.style.opacity=(.58+depth*.42).toFixed(2);button.style.zIndex=String(3+Math.round(depth*8))});requestAnimationFrame(layoutProductOrbit)};
+orbitButtons.forEach((button,index)=>{button.addEventListener('click',()=>openOrbitCategory(button));button.addEventListener('pointerenter',()=>{orbitHover=true});button.addEventListener('pointerleave',()=>{orbitHover=false});button.addEventListener('focus',()=>{orbitHover=true});button.addEventListener('blur',()=>{orbitHover=false});button.addEventListener('keydown',event=>{if(!['ArrowRight','ArrowLeft'].includes(event.key))return;event.preventDefault();const step=event.key==='ArrowRight'?1:-1;orbitButtons[(index+step+orbitButtons.length)%orbitButtons.length].focus()})});orbitMotion?.addEventListener('click',()=>setOrbitMotion(!orbitPaused));if(reduceMotion)setOrbitMotion(true);requestAnimationFrame(layoutProductOrbit)}
 document.querySelector('[data-lang]')?.addEventListener('click',()=>{lang=lang==='en'?'tr':'en';document.documentElement.lang=lang;document.querySelector('[data-lang]').textContent=lang==='en'?'TR':'EN';document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.dataset.i18n;if(translations[lang][key])el.innerHTML=translations[lang][key]});const search=document.querySelector('[data-search]');if(search)search.placeholder=translations[lang].search;document.querySelectorAll('[data-private]').forEach(el=>el.textContent=translations[lang].private)});
 let filter='all',showLimit=12;const search=document.querySelector('[data-search]');
 function updateCollectionStory(button){const title=document.querySelector('[data-story-title]'),summary=document.querySelector('[data-story-summary]'),value=document.querySelector('[data-story-value]');if(title)title.textContent=button?.dataset.collectionName||'All projects';if(summary)summary.textContent=button?.dataset.collectionSummary||'';if(value)value.textContent=button?.dataset.collectionValue||''}

@@ -1,4 +1,4 @@
-const CACHE = "tbc-tech-ai-v6";
+const CACHE = "tbc-tech-ai-v7";
 const CORE = ["/", "/manifest.webmanifest", "/favicon.svg", "/og-tbc-tech-ai.png"];
 self.addEventListener("install", (event) => event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(CORE))));
 self.addEventListener("activate", (event) => event.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key))))));
