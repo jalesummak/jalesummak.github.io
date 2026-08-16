@@ -1,157 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Jale Summak — AI Sistemleri & Ürün Geliştirici · TBC Tech AI</title>
-<meta name="description" content="Jale Summak — AI Systems & Product Builder, founder of TBC Tech AI. 54 evidence-backed AI projects across 11 clear categories. TR/EN.">
-<meta name="theme-color" content="#080b12">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="favicon.svg">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jale Summak — AI Systems & Product Builder">
-<meta property="og:description" content="54 evidence-backed AI projects across 11 clear categories. What was built, how, and what was measured.">
-<meta property="og:image" content="https://jalesummak.tbctechai.com/og.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jale Summak — AI Systems & Product Builder · TBC Tech AI</title>
+<meta name="description" content="54 evidence-backed AI projects across 11 clear categories. Jale Summak — AI Systems & Product Builder, TBC Tech AI. TR / EN / RU / UZ.">
+<meta property="og:title" content="Jale Summak — AI Systems & Product Builder · TBC Tech AI">
+<meta property="og:description" content="54 evidence-backed AI projects across 11 clear categories.">
 <meta property="og:url" content="https://jalesummak.tbctechai.com/">
+<meta property="og:image" content="/og-tbc-tech-ai.png">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b1023">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="manifest" href="/manifest.webmanifest">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="topbar">
-  <a class="brand" href="#top">JS<span>·</span>Jale Summak</a>
-  <nav class="nav">
-    <a href="#hakkimda" data-i18n="navAbout">Hakkımda</a>
-    <a href="#kategoriler" data-i18n="navCategories">Kategoriler</a>
-    <a href="#uygulamalar" data-i18n="navApps">Uygulamalar</a>
-    <a href="#iletisim" data-i18n="navContact">İletişim</a>
+<div class="bg" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="orb orb-4"></div>
+  <div class="grid-lines"></div>
+</div>
+
+<header class="nav">
+  <a class="nav-logo" href="#top"><span class="logo-dot"></span>Jale&nbsp;Summak</a>
+  <nav class="nav-links">
+    <a href="#about" data-i18n="navAbout">Hakkımda</a>
+    <a href="#categories" data-i18n="navCategories">Kategoriler</a>
+    <a href="#apps" data-i18n="navApps">Uygulamalar</a>
+    <a href="#contact" data-i18n="navContact">İletişim</a>
+    <a class="nav-cv" href="/cv.pdf" data-i18n="cv">CV</a>
   </nav>
-  <div class="topbar-actions">
-    <a class="cv-link" href="cv.pdf" target="_blank" rel="noreferrer" data-i18n="cv">CV</a>
-    <button class="lang-btn" id="langToggle" type="button" aria-label="Switch language">EN</button>
+  <div class="lang" id="langToggle" role="group" aria-label="Language">
+    <button data-lang="tr" class="on">TR</button>
+    <button data-lang="en">EN</button>
+    <button data-lang="ru">RU</button>
+    <button data-lang="uz">UZ</button>
   </div>
 </header>
 
-<main>
+<main id="top">
 
-  <!-- HERO -->
-  <section id="top" class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow" data-i18n="heroEyebrow">JALE SUMMAK · AI SİSTEMLERİ & ÜRÜN GELİŞTİRİCİ</p>
-      <h1 data-i18n="heroHeadline">Veriyi güvenle karar verebileceğiniz <em>AI sistemlerine</em> dönüştürüyorum.</h1>
-      <p class="hero-intro" data-i18n="heroIntro">Kaynağa dayalı AI ajanlarından bilgisayarlı görüye; tahminleme, öneri sistemleri ve dağıtık veri temellerine uzanan, incelenebilir ve kullanılabilir bir portföy.</p>
-      <div class="hero-stats">
-        <div class="stat"><strong id="statProjects">54</strong><span data-i18n="statProjects">Proje</span></div>
-        <div class="stat"><strong id="statCategories">11</strong><span data-i18n="statCategories">Kategori</span></div>
-        <div class="stat"><strong id="statApps">8</strong><span data-i18n="statApps">Canlı Uygulama</span></div>
-        <div class="stat"><strong id="statYears">14+</strong><span data-i18n="statYears">Yıl Mühendislik</span></div>
-      </div>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#kategoriler" data-i18n="ctaCategories">Kategorileri Keşfet</a>
-        <a class="btn btn-ghost" href="https://github.com/jalesummak" target="_blank" rel="noreferrer" data-i18n="ctaGithub">GitHub'ı İncele</a>
-      </div>
+  <section class="hero">
+    <div class="hero-eyebrow" data-i18n="heroEyebrow">JALE SUMMAK · AI SİSTEMLERİ & ÜRÜN GELİŞTİRİCİ</div>
+    <h1 class="hero-title" data-i18n="heroHeadline">Veriyi güvenle karar verebileceğiniz <em>AI sistemlerine</em> dönüştürüyorum.</h1>
+    <p class="hero-intro" data-i18n="heroIntro">Kaynağa dayalı AI ajanlarından bilgisayarlı görüye; tahminleme, öneri sistemleri ve dağıtık veri temellerine uzanan, incelenebilir ve kullanılabilir bir portföy.</p>
+    <div class="hero-stats">
+      <div class="stat"><strong id="statProjects">54</strong><span data-i18n="statProjects">Proje</span></div>
+      <div class="stat"><strong id="statCategories">11</strong><span data-i18n="statCategories">Kategori</span></div>
+      <div class="stat"><strong id="statApps">8</strong><span data-i18n="statApps">Canlı Uygulama</span></div>
+      <div class="stat"><strong id="statYears">14+</strong><span data-i18n="statYears">Yıl Mühendislik</span></div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#categories" data-i18n="ctaCategories">Kategorileri Keşfet</a>
+      <a class="btn btn-ghost" href="https://github.com/jalesummak" target="_blank" rel="noreferrer" data-i18n="ctaGithub">GitHub'ı İncele</a>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="hakkimda" class="section about">
+  <section class="about" id="about">
     <div class="section-head">
-      <span class="section-index">01</span>
-      <h2 data-i18n="aboutTitle">Hakkımda</h2>
+      <span class="section-tag" data-i18n="aboutTitle">Hakkımda</span>
+      <h2 data-i18n="aboutLead">AI Sistemleri ve Ürün Geliştirici, TBC Tech AI kurucusu. Ham veriyi, insanların ve işletmelerin güvenle karar verebileceği AI sistemlerine dönüştürüyorum.</h2>
     </div>
     <div class="about-grid">
-      <div class="about-copy">
-        <p class="about-lead" data-i18n="aboutLead">AI Sistemleri ve Ürün Geliştirici, TBC Tech AI kurucusu. Ham veriyi, insanların ve işletmelerin güvenle karar verebileceği AI sistemlerine dönüştürüyorum.</p>
+      <div class="about-text">
         <p data-i18n="aboutBody1">Çalışmalarım tüm süreci kapsar: veri hazırlama, modelleme, değerlendirme, yayınlama ve arayüz tasarımı. Sınıflandırma, bilgisayar görüsü, derin öğrenme, NLP, tahminleme, öneri sistemleri ve dağıtık veri temelleri (Spark, GIS, AutoML) üzerine 54 kanıt temelli proje ürettim.</p>
         <p data-i18n="aboutBody2">FDE — <strong>Forward Deployment Engineer</strong> — mantığıyla çalışıyorum: araştırma ancak yayına alındığında değerlidir. Bu portföydeki her proje; ne yapıldığını, hangi yöntemlerin kullanıldığını, hangi değerin hedeflendiğini, ne ölçüldüğünü ve kanıtın nerede olduğunu (GitHub, Kaggle, Hugging Face) açıkça gösterir.</p>
-        <div class="about-skills">
-          <span>Data Science</span><span>AI Agents & RAG</span><span>Computer Vision</span><span>Deep Learning</span><span>Forecasting</span><span>MLOps</span><span>Apache Spark</span><span>Product Design</span><span>Deployment</span>
+        <div class="about-facts">
+          <div><b id="factProjects">54</b><span data-i18n="factProjects">Kanıt temelli proje</span></div>
+          <div><b>11</b><span data-i18n="factCollections">Net teknik kategori</span></div>
+          <div><b>8</b><span data-i18n="factApps">Canlı uygulama merkezi</span></div>
+          <div><b>14+</b><span data-i18n="factEngineering">Mühendislik deneyimi</span></div>
         </div>
-        <div class="about-actions">
-          <a class="btn btn-primary" href="cv.pdf" target="_blank" rel="noreferrer" data-i18n="cvDownload">CV'yi İndir</a>
-          <a class="btn btn-ghost" href="#iletisim" data-i18n="contactMe">İletişime Geç</a>
+        <div class="about-cta">
+          <a class="btn btn-primary" href="/cv.pdf" data-i18n="cvDownload">CV'yi İndir</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="contactMe">İletişime Geç</a>
         </div>
       </div>
-      <aside class="about-card">
-        <div class="about-card-head">
-          <span class="about-avatar">JS</span>
-          <div><strong>Jale Summak</strong><small>Founder · TBC Tech AI</small></div>
-        </div>
-        <ul class="about-facts">
-          <li><span data-i18n="factProjects">Kanıt temelli proje</span><b>54</b></li>
-          <li><span data-i18n="factCollections">Net teknik kategori</span><b>11</b></li>
-          <li><span data-i18n="factApps">Canlı uygulama merkezi</span><b>8</b></li>
-          <li><span data-i18n="factEngineering">Mühendislik deneyimi</span><b>14+ yıl</b></li>
-        </ul>
-        <div class="about-links">
-          <a href="mailto:jalesummak@gmail.com">Email</a>
+      <div class="about-card">
+        <div class="avatar-ring"><span class="avatar">JS</span></div>
+        <h3>Jale Summak</h3>
+        <p>AI Systems & Product Builder · Founder, TBC Tech AI</p>
+        <div class="about-social">
           <a href="https://github.com/jalesummak" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.kaggle.com/jalesummak" target="_blank" rel="noreferrer">Kaggle</a>
-          <a href="https://huggingface.co/jalesummak" target="_blank" rel="noreferrer">Hugging Face</a>
-          <a href="https://www.linkedin.com/in/jalesummak/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://huggingface.co/jalesummak" target="_blank" rel="noreferrer">Hugging&nbsp;Face</a>
+          <a href="https://www.linkedin.com/in/jalesummak" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://medium.com/@jalesummak" target="_blank" rel="noreferrer">Medium</a>
         </div>
-      </aside>
+      </div>
     </div>
   </section>
 
-  <!-- CATEGORIES -->
-  <section id="kategoriler" class="section categories">
-    <div class="section-head">
-      <span class="section-index">02</span>
-      <h2 data-i18n="catTitle">Kategoriler</h2>
+  <section class="categories" id="categories">
+    <div class="section-head center">
+      <span class="section-tag" data-i18n="catTitle">Kategoriler</span>
+      <h2 data-i18n="catLead">Bir kategori seçin — ilgili projeler hemen altında açılır. Her projede amaç, yöntem, ölçülen sonuç ve GitHub / Kaggle / Hugging Face kanıtları yer alır.</h2>
+      <p class="orbit-hint" data-i18n="selectHint">Küre dönüyor — seçmek için bir kategoriye tıkla</p>
     </div>
-    <p class="section-lead" data-i18n="catLead">Bir kategori seçin — ilgili projeler hemen altında açılır. Her projede amaç, yöntem, ölçülen sonuç ve GitHub / Kaggle / Hugging Face kanıtları yer alır.</p>
-    <div class="cat-stage" id="catStage" aria-live="polite"></div>
-    <div class="cat-results" id="catResults" hidden></div>
+
+    <div class="orbit-wrap" id="orbitWrap">
+      <div class="orbit" id="orbit">
+        <div class="orbit-center">
+          <div class="orbit-center-ico">◆</div>
+          <div class="orbit-center-title">TBC<br><span>TECH AI</span></div>
+          <div class="orbit-center-sub"><b id="orbitProjCount">54</b> <span data-i18n="statProjects">PROJE</span></div>
+        </div>
+        <div class="orbit-ring" id="orbitRing"></div>
+      </div>
+    </div>
+
+    <div id="catResults" hidden></div>
   </section>
 
-  <!-- APPS -->
-  <section id="uygulamalar" class="section apps">
-    <div class="section-head">
-      <span class="section-index">03</span>
-      <h2 data-i18n="appsTitle">Canlı Uygulamalar</h2>
+  <section class="apps" id="apps">
+    <div class="section-head center">
+      <span class="section-tag" data-i18n="appsTitle">Canlı Uygulamalar</span>
+      <h2 data-i18n="appsLead">54 proje, 8 canlı ve mobil uyumlu uygulama merkezinde toplanır. Her merkez kendi interaktif sayfasını açar ve arkasındaki kanıtları gösterir.</h2>
     </div>
-    <p class="section-lead" data-i18n="appsLead">54 proje, 8 canlı ve mobil uyumlu uygulama merkezinde toplanır. Her merkez kendi interaktif sayfasını açar ve arkasındaki kanıtları gösterir.</p>
     <div class="apps-grid" id="appsGrid"></div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="iletisim" class="section contact">
-    <div class="section-head">
-      <span class="section-index">04</span>
-      <h2 data-i18n="contactTitle">İletişim</h2>
+  <section class="contact" id="contact">
+    <div class="section-head center">
+      <span class="section-tag" data-i18n="contactTitle">İletişim</span>
     </div>
-    <div class="contact-grid">
-      <a class="contact-card" href="mailto:jalesummak@gmail.com">
-        <span class="contact-icon">✉</span>
-        <strong data-i18n="contactEmail">Email</strong>
-        <small>jalesummak@gmail.com</small>
-      </a>
-      <a class="contact-card" href="https://github.com/jalesummak" target="_blank" rel="noreferrer">
-        <span class="contact-icon">⌥</span>
-        <strong>GitHub</strong>
-        <small>github.com/jalesummak</small>
-      </a>
-      <a class="contact-card" href="https://www.linkedin.com/in/jalesummak/" target="_blank" rel="noreferrer">
-        <span class="contact-icon">in</span>
-        <strong>LinkedIn</strong>
-        <small>in/jalesummak</small>
-      </a>
-      <a class="contact-card" href="https://www.kaggle.com/jalesummak" target="_blank" rel="noreferrer">
-        <span class="contact-icon">k</span>
-        <strong>Kaggle</strong>
-        <small>kaggle.com/jalesummak</small>
-      </a>
-      <a class="contact-card" href="https://huggingface.co/jalesummak" target="_blank" rel="noreferrer">
-        <span class="contact-icon">H</span>
-        <strong>Hugging Face</strong>
-        <small>huggingface.co/jalesummak</small>
-      </a>
-      <a class="contact-card" href="https://medium.com/@jalesummak" target="_blank" rel="noreferrer">
-        <span class="contact-icon">M</span>
-        <strong>Medium</strong>
-        <small>medium.com/@jalesummak</small>
-      </a>
+    <div class="contact-card">
+      <div class="contact-ico">✉</div>
+      <a class="contact-mail" href="mailto:jalesummak@gmail.com">jalesummak@gmail.com</a>
+      <div class="contact-social">
+        <a href="https://github.com/jalesummak" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.kaggle.com/jalesummak" target="_blank" rel="noreferrer">Kaggle</a>
+        <a href="https://huggingface.co/jalesummak" target="_blank" rel="noreferrer">Hugging Face</a>
+        <a href="https://www.linkedin.com/in/jalesummak" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://medium.com/@jalesummak" target="_blank" rel="noreferrer">Medium</a>
+        <a href="/cv.pdf">CV</a>
+      </div>
     </div>
   </section>
 
@@ -159,13 +146,10 @@
 
 <footer class="footer">
   <div class="footer-fde">
-    <span class="fde-badge">FDE</span>
-    <div>
-      <strong data-i18n="footerFdeTitle">TBC Teknoloji · TBC TECH AI</strong>
-      <p data-i18n="footerFdeText">Forward Deployment Engineer mantığı: araştırma, yayına alındığında değer üretir. Problem → Veri → Model → Karar → Ürün.</p>
-    </div>
+    <strong data-i18n="footerFdeTitle">TBC Teknoloji · TBC TECH AI</strong>
+    <p data-i18n="footerFdeText">Forward Deployment Engineer mantığı: araştırma, yayına alındığında değer üretir. Problem → Veri → Model → Karar → Ürün.</p>
   </div>
-  <p class="footer-copy">© 2026 Jale Summak · Personal portfolio — TBC Tech AI · Product studio</p>
+  <p class="footer-copy" data-i18n="footerCopy">© 2026 Jale Summak · Personal portfolio — TBC Tech AI · Product studio</p>
 </footer>
 
 <script src="js/data.js"></script>
