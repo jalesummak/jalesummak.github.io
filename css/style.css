@@ -246,6 +246,8 @@ section { max-width: 1200px; margin: 0 auto; padding: clamp(60px, 8vh, 100px) cl
     0 0 20px -4px var(--c, var(--g1));
   cursor: pointer;
   transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transition: border-color 0.2s, box-shadow 0.3s;
 }
 .cat-orb:hover {
