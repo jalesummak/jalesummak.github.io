@@ -320,19 +320,19 @@
     return '<svg viewBox="0 0 480 210" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="' + esc(p.title) + '">' +
       '<defs>' +
       '<linearGradient id="grad-' + p.title.replace(/\W+/g, "") + '" x1="0" y1="0" x2="1" y2="1">' +
-      '<stop offset="0" stop-color="' + rgba(c, 0.55) + '"/><stop offset="1" stop-color="' + rgba(c, 0.12) + '"/></linearGradient>' +
+      '<stop offset="0" stop-color="' + rgba(c, 0.18) + '"/><stop offset="1" stop-color="' + rgba(c, 0.04) + '"/></linearGradient>' +
       '<radialGradient id="glow-' + p.title.replace(/\W+/g, "") + '" cx="0.5" cy="0.4" r="0.7">' +
-      '<stop offset="0" stop-color="' + rgba(c, 0.35) + '"/><stop offset="1" stop-color="rgba(7,11,26,0)"/></radialGradient>' +
+      '<stop offset="0" stop-color="' + rgba(c, 0.15) + '"/><stop offset="1" stop-color="rgba(240,242,255,0)"/></radialGradient>' +
       '<marker id="arrow-' + p.title.replace(/\W+/g, "") + '" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="' + rgba(c, 0.7) + '"/></marker>' +
       "</defs>" +
-      '<rect width="480" height="210" fill="#eaefff"/>' +
+      '<rect width="480" height="210" fill="#f0f2ff"/>' +
       '<rect width="480" height="210" fill="' + g + '" opacity="0.5"/>' +
       '<rect width="480" height="210" fill="url(#glow-' + p.title.replace(/\W+/g, "") + ')"/>' +
-      '<path d="M0 0 H480 M0 15 H480 M0 30 H480 M0 45 H480 M0 60 H480 M0 75 H480 M0 90 H480 M0 105 H480 M0 120 H480 M0 135 H480 M0 150 H480 M0 165 H480 M0 180 H480 M0 195 H480" stroke="rgba(108,92,231,0.08)"/>' +
-      '<path d="M0 0 V210 M30 0 V210 M60 0 V210 M90 0 V210 M120 0 V210 M150 0 V210 M180 0 V210 M210 0 V210 M240 0 V210 M270 0 V210 M300 0 V210 M330 0 V210 M360 0 V210 M390 0 V210 M420 0 V210 M450 0 V210" stroke="rgba(108,92,231,0.08)"/>' +
+      '<path d="M0 0 H480 M0 15 H480 M0 30 H480 M0 45 H480 M0 60 H480 M0 75 H480 M0 90 H480 M0 105 H480 M0 120 H480 M0 135 H480 M0 150 H480 M0 165 H480 M0 180 H480 M0 195 H480" stroke="rgba(108,92,231,0.06)"/>' +
+      '<path d="M0 0 V210 M30 0 V210 M60 0 V210 M90 0 V210 M120 0 V210 M150 0 V210 M180 0 V210 M210 0 V210 M240 0 V210 M270 0 V210 M300 0 V210 M330 0 V210 M360 0 V210 M390 0 V210 M420 0 V210 M450 0 V210" stroke="rgba(108,92,231,0.06)"/>' +
       motif +
-      '<rect x="0" y="0" width="480" height="210" fill="none" stroke="rgba(108,92,231,0.18)"/>' +
-      '<rect x="372" y="14" width="96" height="24" rx="12" fill="' + rgba(c, 0.18) + '" stroke="' + rgba(c, 0.5) + '"/>' +
+      '<rect x="0" y="0" width="480" height="210" fill="none" stroke="rgba(108,92,231,0.15)"/>' +
+      '<rect x="372" y="14" width="96" height="24" rx="12" fill="' + rgba(c, 0.12) + '" stroke="' + rgba(c, 0.4) + '"/>' +
       '<text x="420" y="30" fill="' + c + '" font-size="11" font-weight="800" text-anchor="middle">' + esc(cat.name) + "</text>" +
       '<text x="20" y="196" fill="#1a1a2e" font-size="13" font-weight="800">' + esc(short) + "</text>" +
       "</svg>";
