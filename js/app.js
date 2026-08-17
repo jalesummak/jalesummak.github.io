@@ -7,13 +7,13 @@
   var i18n = {
     tr: {
       navAbout: "Hakkımda", navCategories: "Kategoriler", navApps: "Uygulamalar", navContact: "İletişim", cv: "CV",
-      heroEyebrow: "JALE SUMMAK · AI SİSTEMLERİ & ÜRÜN GELİŞTİRİCİ",
+      heroEyebrow: "JALE SUMMAK · AI TECH LEAD & FORWARD DEPLOYMENT ENGINEER · PRODUCT BUILDER",
       heroHeadline: "Veriyi güvenle karar verebileceğiniz <em>AI sistemlerine</em> dönüştürüyorum.",
       heroIntro: "Kaynağa dayalı AI ajanlarından bilgisayarlı görüye; tahminleme, öneri sistemleri ve dağıtık veri temellerine uzanan, incelenebilir ve kullanılabilir bir portföy.",
       statProjects: "Proje", statCategories: "Kategori", statApps: "Canlı Uygulama", statYears: "Yıl Mühendislik",
       ctaCategories: "Kategorileri Keşfet", ctaGithub: "GitHub'ı İncele",
       aboutTitle: "Hakkımda",
-      aboutLead: "AI Sistemleri ve Ürün Geliştirici, TBC Tech AI kurucusu. Ham veriyi, insanların ve işletmelerin güvenle karar verebileceği AI sistemlerine dönüştürüyorum.",
+      aboutLead: "AI Tech Lead & Forward Deployment Engineer · TBC Tech AI Product Builder. Ham veriyi, insanların ve işletmelerin güvenle karar verebileceği AI sistemlerine dönüştürüyorum.",
       aboutBody1: "Çalışmalarım tüm süreci kapsar: veri hazırlama, modelleme, değerlendirme, yayınlama ve arayüz tasarımı. Sınıflandırma, bilgisayar görüsü, derin öğrenme, NLP, tahminleme, öneri sistemleri ve dağıtık veri temelleri (Spark, GIS, AutoML) üzerine 54 kanıt temelli proje ürettim.",
       aboutBody2: "FDE — <strong>Forward Deployment Engineer</strong> — mantığıyla çalışıyorum: araştırma ancak yayına alındığında değerlidir. Bu portföydeki her proje; ne yapıldığını, hangi yöntemlerin kullanıldığını, hangi değerin hedeflendiğini, ne ölçüldüğünü ve kanıtın nerede olduğunu (GitHub, Kaggle, Hugging Face) açıkça gösterir.",
       cvDownload: "CV'yi İndir", contactMe: "İletişime Geç",
@@ -35,13 +35,13 @@
     },
     en: {
       navAbout: "About", navCategories: "Categories", navApps: "Apps", navContact: "Contact", cv: "CV",
-      heroEyebrow: "JALE SUMMAK · AI SYSTEMS & PRODUCT BUILDER",
+      heroEyebrow: "JALE SUMMAK · AI TECH LEAD & FORWARD DEPLOYMENT ENGINEER · PRODUCT BUILDER",
       heroHeadline: "I build AI systems that turn data <em>into confident decisions.</em>",
       heroIntro: "From source-grounded AI agents and computer vision to forecasting, recommender systems and distributed data foundations — an evidence-led portfolio built to be inspected, understood and used.",
       statProjects: "Projects", statCategories: "Categories", statApps: "Live Apps", statYears: "Years Engineering",
       ctaCategories: "Explore Categories", ctaGithub: "Inspect GitHub",
       aboutTitle: "About Me",
-      aboutLead: "AI Systems & Product Builder, founder of TBC Tech AI. I turn raw data into AI systems that help people and businesses decide with confidence.",
+      aboutLead: "AI Tech Lead & Forward Deployment Engineer, Product Builder at TBC Tech AI. I turn raw data into AI systems that help people and businesses decide with confidence.",
       aboutBody1: "My work spans the full journey: data preparation, modeling, evaluation, deployment and interface design. I have delivered 54 evidence-backed projects across classification, computer vision, deep learning, NLP, forecasting, recommender systems and distributed data foundations (Spark, GIS, AutoML).",
       aboutBody2: "I work with an FDE — <strong>Forward Deployment Engineer</strong> — mindset: research is only valuable once it ships. Every project in this portfolio clearly shows what was built, which methods were used, what value was intended, what was measured, and where the evidence lives (GitHub, Kaggle, Hugging Face).",
       cvDownload: "Download CV", contactMe: "Get in Touch",
@@ -63,7 +63,7 @@
     },
     ru: {
       navAbout: "Обо мне", navCategories: "Категории", navApps: "Приложения", navContact: "Контакты", cv: "CV",
-      heroEyebrow: "ДЖЕЙЛ СУММАК · АРХИТЕКТОР AI-СИСТЕМ И ПРОДУКТОВ",
+      heroEyebrow: "JALE SUMMAK · AI TECH LEAD & FORWARD DEPLOYMENT ENGINEER · PRODUCT BUILDER",
       heroHeadline: "Я превращаю данные в <em>уверенные решения</em> на основе ИИ.",
       heroIntro: "От ИИ-агентов с опорой на источники и компьютерного зрения до прогнозирования, рекомендательных систем и распределённых данных — проверяемое портфолио.",
       statProjects: "Проекты", statCategories: "Категории", statApps: "Живые приложения", statYears: "лет инженерии",
@@ -91,7 +91,7 @@
     },
     uz: {
       navAbout: "Men haqimda", navCategories: "Kategoriyalar", navApps: "Ilovalar", navContact: "Aloqa", cv: "CV",
-      heroEyebrow: "JALE SUMMAK · AI TIZIMLARI VA MAHSULOT YARATUVCHISI",
+      heroEyebrow: "JALE SUMMAK · AI TECH LEAD & FORWARD DEPLOYMENT ENGINEER · PRODUCT BUILDER",
       heroHeadline: "Ma'lumotni ishonchli qarorlar uchun <em>AI tizimlariga</em> aylantiraman.",
       heroIntro: "Manbaga tayangan AI agentlari va kompyuter ko'rishdan bashorat, tavsiya tizimlari va tarqatilgan ma'lumotgacha — tekshirilishi mumkin portfel.",
       statProjects: "Loyihalar", statCategories: "Kategoriyalar", statApps: "Jonli ilovalar", statYears: "yil muhandislik",
@@ -150,7 +150,7 @@
     lang = next;
     try { localStorage.setItem("js-site-lang", next); } catch (e) {}
     document.documentElement.lang = next;
-    var titles = { tr: "Jale Summak — AI Sistemleri & Ürün Geliştirici · TBC Tech AI", en: "Jale Summak — AI Systems & Product Builder · TBC Tech AI", ru: "Джейл Суммак — Архитектор AI-систем · TBC Tech AI", uz: "Jale Summak — AI tizimlari va mahsulot yaratuvchisi · TBC Tech AI" };
+    var titles = { tr: "Jale Summak — AI Tech Lead & Forward Deployment Engineer · TBC Tech AI", en: "Jale Summak — AI Tech Lead & Forward Deployment Engineer · TBC Tech AI", ru: "Джейл Суммак — AI Tech Lead & Forward Deployment Engineer · TBC Tech AI", uz: "Jale Summak — AI Tech Lead & Forward Deployment Engineer · TBC Tech AI" };
     document.title = titles[next];
     langBtns.forEach(function (b) { b.classList.toggle("on", b.getAttribute("data-lang") === next); });
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
